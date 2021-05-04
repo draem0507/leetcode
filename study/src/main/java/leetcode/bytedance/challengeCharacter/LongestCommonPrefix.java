@@ -10,7 +10,27 @@ package leetcode.bytedance.challengeCharacter;
 public class LongestCommonPrefix {
 
 
+    public String longestCommonPrefix2(String[] strs) {
 
+        if(strs.length==0){
+            return "";
+        }
+
+        String temp=strs[0];
+        for(String s:strs){
+            while(!s.startsWith(temp)){
+                if(s.length()==0){
+                    return "";
+                }
+                temp=temp.substring(0,temp.length()-1);
+
+            }
+
+        }
+        return temp;
+
+
+    }
 
 
     public static String longestCommonPrefix(String [] strs){
@@ -66,16 +86,15 @@ public class LongestCommonPrefix {
 
        // System.out.println(longestCommonPrefix(strs));
 
-        strs =new String[]{"dog","racecar","car"};
+     //   strs =new String[]{"dog","racecar","car"};
 
       //  System.out.println(longestCommonPrefix(strs));
 
 
-        strs =new String[]{"ca","a"};
+       // strs =new String[]{"ca","a"};
 
         System.out.println(longestCommonPrefix(strs));
-
-
+        System.out.println("abcde".substring(1,3));
 
 
 

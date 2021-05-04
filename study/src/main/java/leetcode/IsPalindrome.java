@@ -8,6 +8,28 @@ package leetcode;
  */
 public class IsPalindrome {
 
+
+
+    public static  boolean isPalindrome2(int x) {
+
+
+        return reserve(x)==x;
+    }
+
+    public static int reserve(int x ){
+
+        if(x<0){
+            return 0;
+        }
+        int res =0;
+        while(x!=0){
+            res =res*10+ x%10;
+            x =x/10;
+        }
+        return res;
+    }
+
+
     public boolean isPalindrome(int x) {
 
         if (x < 0) {
@@ -32,6 +54,7 @@ public class IsPalindrome {
 
         System.out.println(-12 / 10);
         System.out.println(-12 % 10);
+        System.out.println(isPalindrome2(121));
 
     }
 

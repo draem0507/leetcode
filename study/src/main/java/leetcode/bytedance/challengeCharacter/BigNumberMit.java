@@ -10,4 +10,19 @@ package leetcode.bytedance.challengeCharacter;
  * https://www.cnblogs.com/ariel-dreamland/p/9139468.html
  */
 public class BigNumberMit {
+
+	public static void main(String[] args) {
+
+		int zero="0".charAt(0);
+		int one="3".charAt(0);
+		System.out.println(zero);
+		System.out.println(one);
+		System.out.println(13%10);
+	}
+
+
+	public String multiply(String num1, String num2) {
+
+		return null;
+	}
 }
